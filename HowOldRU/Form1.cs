@@ -16,5 +16,13 @@ namespace HowOldRU
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DateTime dtBirth = dtBirthday.Value;
+            DateTime dtPresent = DateTime.Now;
+            int age = dtPresent.Year - dtBirth.Year;
+            txtAge.Text = age.ToString();
+        }
     }
 }
